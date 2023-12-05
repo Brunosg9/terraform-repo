@@ -8,7 +8,4 @@
 
 4 - Habilitar Acesso Público: Permita o acesso público ao bucket S3 e seus objetos configurando a política do bucket ou as Listas de Controle de Acesso (ACLs).
 
-
-5 - Testar o Site: Após a configuração, teste seu site estático acessando-o através do URL do site do bucket S3 ou do seu domínio personalizado.
-
-6 - link do bucket - http://sg9-aws-s3.s3-website-us-east-1.amazonaws.com
+5 - link do bucket - http://sg9-aws-s3.s3-website-us-east-1.amazonaws.com
