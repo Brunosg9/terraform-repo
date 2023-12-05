@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bruno Garcia - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Bruno Garcia da silva
+          <div class="contact_info">
+            <img src="html/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          brunog.silva@live.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +55 (12) 98705-5516
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-e">Sobre</a>
+          <a class="topmenu" href="#skills">Habilidades</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recomendacoes</a>
+         
+
+        </div>
+
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html/bruno2.jpeg" width="250px"/>
+      </div>
+
+      <div>
+          <h1>
+            Ola , Eu sou Bruno Garcia! 
+          </h1>
+          <p>
+            Graduando em Gestao da Tecnologia da Informacao UNINTER, com certificacao em DevOps.
+            Habilidade em metodologias ageis com trabalhos em equipe para atingir metas das sprints. Alta
+            capacidade em solucoes de problemas, com experiencia em programacao e arquiteturas de
+            nuvem. Focado em seguir carreira de tecnologia.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html/html5.png" width="40px"/>
+          <h6>HTML</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />
+          <h6>Container</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html/GitHub-Logo.png"/>
+          <h6>GitHub</h6>
+          <p>1 years experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html/aws.png"/>
+          <h6>AWS</h6>
+          <p>1 years experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html/node.png"/>
+          <h6>Node.js</h6>  
+          <p>1 years experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain-wordmark.svg" />
+          <h6>Kubernetes</h6>
+          <p>1 years experience</p>
+        </div> 
+
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projetos
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Terraform</h3>
+            <ul>
+              <li>Esta pagina foi feita com terraform e coloca via IaC para a AWS S3.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>AWS</h3>
+            <ul>
+              <li>Foi estruturada com arquivos politicas de segurança para acesso e um site estatico.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>HTML</h3>
+            <ul>
+              <li>E por fim criada com HTML5, com style.css escript.js, libs do JavaScript para modular paginas.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Bruno e muito esforcado, curioso e meticuloso e gosta de improvisar nas coisas mais simples, como esse projeto de docker
+          dentro do GitHub para mostrar suas habilidades.
+          
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Esta se desenvolvendo em infraestruturas para ser um DevOps.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          E vai explorar todas as suas ferramentas que sao mais utilizadas hoje em dia. 
+          <span>&#8221;</span>
+        
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Deixe seu recomendacao</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="/home/bruno/Development/iago/html/checkmark--outline.svg"/>
+      <h3> Thanks for a Leaving recommendation </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
