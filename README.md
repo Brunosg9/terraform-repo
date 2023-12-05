@@ -10,3 +10,5 @@
 
 
 5 - Testar o Site: Após a configuração, teste seu site estático acessando-o através do URL do site do bucket S3 ou do seu domínio personalizado.
+
+6 - link do bucket - http://sg9-aws-s3.s3-website-us-east-1.amazonaws.com
